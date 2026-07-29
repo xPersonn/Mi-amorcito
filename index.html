@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ariana 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            font-family: 'Poppins', sans-serif;
+            color: #4a4a4a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 4rem;
+            color: #d81b60;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .photos-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-card {
+            background: #fff;
+            padding: 10px 10px 25px 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+            width: 200px;
+        }
+
+        .photo-card:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .photo-card:hover {
+            transform: scale(1.05) rotate(0deg);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .mensaje-box {
+            background: #fff0f3;
+            border-left: 4px solid #e91e63;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+
+        /* Corazones flotantes de fondo */
+        .heart {
+            position: absolute;
+            color: rgba(233, 30, 99, 0.2);
+            font-size: 1.5rem;
+            animation: floatUp 6s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fondo animado con corazones -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;">💖</div>
+    <div class="heart" style="left: 50%; animation-delay: 4s;">❤️</div>
+    <div class="heart" style="left: 70%; animation-delay: 1s;">💗</div>
+    <div class="heart" style="left: 90%; animation-delay: 3s;">❤️</div>
+
+    <div class="container">
+        <h1>Ariana</h1>
+        <p class="subtitle">Un pequeño detalle hecho especialmente para ti ✨</p>
+
+        <!-- Sección de las dos fotos -->
+        <div class="photos-grid">
+            <div class="photo-card">
+                <!-- Cambia 'foto1.jpg' por el nombre de tu primera foto -->
+                <img src="saga.jpeg" alt="Ariana">
+            </div>
+            <div class="photo-card">
+                <!-- Cambia 'foto2.jpg' por el nombre de tu segunda foto -->
+                <img src="Ari2.jpeg" alt="Ariana">
+            </div>
+        </div>
+
+        <!-- Mensaje especial -->
+        <div class="mensaje-box">
+            <p><strong>Mi amor,</strong><br>
+            Hice esta pequeña página solo para recordarte lo muchísimo que significas para mí y lo hermosa que eres. Gracias por cada sonrisa y por hacer todo más bonito.</p>
+        </div>
+
+        <div class="footer">
+            Hecho con todo mi cariño para ti ❤️
+        </div>
+    </div>
+
+</body>
+</html>
